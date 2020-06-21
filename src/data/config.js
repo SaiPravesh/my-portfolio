@@ -7,7 +7,7 @@ module.exports = {
     defaultDescription: 'I’m Sai pravesh and I’m a fullstack engineer!',
     socialLinks: {
         twitter: '',
-        github: 'https://github.com/smakosh',
+        github: 'https://github.com/SaiPravesh',
         linkedin: '',
         instagram: '',
         youtube: '',
