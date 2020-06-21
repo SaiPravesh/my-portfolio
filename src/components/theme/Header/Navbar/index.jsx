@@ -5,10 +5,10 @@ import NavbarLinks from '../NavbarLinks';
 import { Wrapper } from './styles';
 
 const Navbar = () => (
-  <Wrapper as={Container}>
-    <Link to="/">John Doe</Link>
-    <NavbarLinks desktop />
-  </Wrapper>
+    <Wrapper as={Container}>
+        <Link to='/'>Sai Pravesh</Link>
+        <NavbarLinks desktop />
+    </Wrapper>
 );
 
 export default Navbar;
