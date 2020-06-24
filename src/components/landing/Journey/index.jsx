@@ -3,7 +3,7 @@ import { Container, Button } from 'components/common';
 import starIcon from 'assets/icons/star.svg';
 import forkIcon from 'assets/icons/fork.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import dev from 'assets/illustrations/skills.svg';
+import dev from 'assets/illustrations/journey.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from '../Skills/styles';
 
 export const Journey = () => {
