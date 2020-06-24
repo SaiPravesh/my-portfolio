@@ -6,12 +6,15 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import dev from 'assets/illustrations/skills.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from '../Skills/styles';
 
-export const Projects = () => {
+export const Journey = () => {
     return (
-        <Wrapper id='Projects'>
+        <Wrapper id='Journey'>
             <SkillsWrapper as={Container}>
+                <Thumbnail>
+                    <img src={dev} alt='I’m Sai Pravesh and I’m a fullstack engineer!' />
+                </Thumbnail>
                 <Details>
-                    <h1>Projects</h1>
+                    <h1>Journey in NTT Data</h1>
                     <p>
                         I joined NTT Data in Jan 2015 as a support analyst and then started
                         contributeing to java and middleware projects. <br />I recently moved to

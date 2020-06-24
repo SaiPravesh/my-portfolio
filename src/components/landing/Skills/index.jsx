@@ -4,22 +4,62 @@ import { Container, Button, Card } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
 import { Grid, Item, Content, Stats } from '../Projects/styles';
+import react from 'assets/logos/reactjs.svg';
+import angular from 'assets/logos/Angular.svg';
+import sass from 'assets/logos/sass.svg';
+import webpack from 'assets/logos/webpack.svg';
+import redux from 'assets/logos/redux.svg';
+import typescript from 'assets/logos/typescript.svg';
+import apolloGraphql from 'assets/logos/apollo-graphql.svg';
+import android from 'assets/logos/android.svg';
+import appleios from 'assets/logos/apple-ios.svg';
+import ionic from 'assets/logos/ionic.svg';
+import java from 'assets/logos/java.svg';
+import spring from 'assets/logos/spring.svg';
+import nodejs from 'assets/logos/nodejs.svg';
+import express from 'assets/logos/express.svg';
+import php from 'assets/logos/php.svg';
+import nginx from 'assets/logos/nginx.svg';
+import mariadb from 'assets/logos/mariadb.svg';
+import mongodb from 'assets/logos/mongodb.svg';
+import docker from 'assets/logos/docker.svg';
+import shell from 'assets/logos/bash.svg';
+import graphql from 'assets/logos/graphql.svg';
+import rest from 'assets/logos/rest.svg';
+import gatsby from 'assets/logos/gatsby.svg';
+import jamstack from 'assets/logos/jamstack.svg';
+import postman from 'assets/logos/postman.svg';
+import git from 'assets/logos/git.svg';
+import jwt from 'assets/logos/jwt.svg';
+import opencms from 'assets/logos/opencms.svg';
+import wordpress from 'assets/logos/wordpress.svg';
+import strapi from 'assets/logos/strapi.svg';
+import jest from 'assets/logos/jest.svg';
+import selenium from 'assets/logos/selenium.svg';
+import puppeteer from 'assets/logos/puppeteer.svg';
+import jenkins from 'assets/logos/jenkins.svg';
+import chef from 'assets/logos/chef.svg';
+import githubPipelines from 'assets/logos/github.svg';
+import googleAnalytics from 'assets/logos/google-analytics.svg';
+import netlify from 'assets/logos/netlify.svg';
+import pwa from 'assets/logos/pwa.svg';
+import bootstrap from 'assets/logos/bootstrap.svg';
 
 const skillList = [
     {
         id: 0,
         type: 'Frontend',
         skills: [
-            { name: 'react.js' },
-            { name: 'AngularJ.js' },
-            { name: 'SASS' },
-            { name: 'NPM' },
-            { name: 'Gulp' },
-            { name: 'Webpack' },
-            { name: 'GA' },
-            { name: 'Android' },
-            { name: 'iOS' },
-            { name: 'PWA' },
+            { name: 'react.js', logo: react },
+            { name: 'Angular.js', logo: angular },
+            { name: 'SASS', logo: sass },
+            { name: 'Webpack', logo: webpack },
+            { name: 'Redux', logo: redux },
+            { name: 'TypeScript', logo: typescript },
+            { name: 'Apollo', logo: apolloGraphql },
+            { name: 'Android', logo: android },
+            { name: 'iOS', logo: appleios },
+            { name: 'Ionic', logo: ionic },
         ],
     },
 
@@ -27,54 +67,54 @@ const skillList = [
         id: 1,
         type: 'Backend',
         skills: [
-            { name: 'Java' },
-            { name: 'Spring boot' },
-            { name: 'Hibernate' },
-            { name: 'Node.js' },
-            { name: 'Express.js' },
-            { name: 'PHP' },
-            { name: 'MySQL/MariaDB' },
-            { name: 'MongoDB' },
-            { name: 'Docker' },
-            { name: 'Shell scripting' },
+            { name: 'Java', logo: java },
+            { name: 'Spring', logo: spring },
+            { name: 'Node.js', logo: nodejs },
+            { name: 'Express.js', logo: express },
+            { name: 'PHP', logo: php },
+            { name: 'Nginx', logo: nginx },
+            { name: 'MariaDB', logo: mariadb },
+            { name: 'MongoDB', logo: mongodb },
+            { name: 'Docker', logo: docker },
+            { name: 'Shell', logo: shell },
         ],
     },
     {
         id: 2,
-        type: 'Integration, Version control and CMS ',
+        type: 'Integration and CMS ',
         skills: [
-            { name: 'GraphQL' },
-            { name: 'Gatsby.js' },
-            { name: 'GIT' },
-            { name: 'SVN' },
-            { name: 'OpenCMS' },
-            { name: 'Wordpress' },
-            { name: 'Strapi' },
+            { name: 'GraphQL', logo: graphql },
+            { name: 'REST API', logo: rest },
+            { name: 'Gatsby.js', logo: gatsby },
+            { name: 'JAMStack', logo: jamstack },
+            { name: 'Postman', logo: postman },
+            { name: 'GIT', logo: git },
+            { name: 'JWT', logo: jwt },
+            { name: 'OpenCMS', logo: opencms },
+            { name: 'Wordpress', logo: wordpress },
+            { name: 'Strapi', logo: strapi },
         ],
     },
     {
         id: 3,
-        type: 'Test and Automation',
-        skills: [{ name: 'Jest' }, { name: 'Selenium' }, { name: 'Puppeteer' }],
-    },
-    {
-        id: 4,
-        type: 'DevOps',
-        skills: [{ name: 'Jenkins' }, { name: 'Chef' }, { name: 'Github pipelines' }],
-    },
-    {
-        id: 5,
-        type: 'Others',
+        type: 'Others ',
         skills: [
-            { name: 'Firebase' },
-            { name: 'Cookie Pro' },
-            { name: 'Agile workflow (Confluence/JIRA)' },
+            { name: 'Jest', logo: jest },
+            { name: 'Selenium', logo: selenium },
+            { name: 'Puppeteer', logo: puppeteer },
+            { name: 'Jenkins', logo: jenkins },
+            { name: 'Chef', logo: chef },
+            { name: 'Github', logo: githubPipelines },
+            { name: 'Analytics', logo: googleAnalytics },
+            { name: 'Netlify', logo: netlify },
+            { name: 'PWA', logo: pwa },
+            { name: 'Bootstrap', logo: bootstrap },
         ],
     },
 ];
 
 export const Skills = () => (
-    <Wrapper id='about'>
+    <Wrapper id='Skills'>
         <SkillsWrapper as={Container}>
             <Thumbnail>
                 <img src={dev} alt='I’m Sai Pravesh and I’m a fullstack engineer!' />
@@ -85,48 +125,45 @@ export const Skills = () => (
                     {skillList.map(skillset => {
                         return (
                             <div>
-                                <Item
-                                    key={skillset.id}
-                                    as='a'
-                                    href={'#'}
-                                    // target='_blank'
-                                    rel='noopener noreferrer'>
+                                <Item key={skillset.id}>
                                     <Card>
+                                        <h4>{skillset.type}</h4>
                                         <Content>
-                                            <h4>{skillset.type}</h4>
                                             {skillset.skills.map(skill => {
                                                 return (
-                                                    <div>
-                                                        <ul>
-                                                            <li>{skill.name}</li>
-                                                        </ul>
-                                                    </div>
+                                                    <Item key={skill.name}>
+                                                        <Card
+                                                            style={{
+                                                                maxHeight: '8rem',
+                                                                marginTop: '5px',
+                                                                width: '4rem',
+                                                            }}>
+                                                            <img
+                                                                src={skill.logo}
+                                                                alt='react'
+                                                                style={{
+                                                                    height: '3rem',
+                                                                    width: '3rem',
+                                                                }}
+                                                            />
+                                                            <p
+                                                                style={{
+                                                                    fontSize: '10pt',
+                                                                    marginBottom: '0',
+                                                                }}>
+                                                                {skill.name}
+                                                            </p>
+                                                        </Card>
+                                                    </Item>
                                                 );
                                             })}
                                         </Content>
-                                        {/* <Stats>
-                                    <div>
-                                        <img src={starIcon} alt='stars' />
-                                        <span>{node.stargazers.totalCount}</span>
-                                    </div>
-                                    <div>
-                                        <img src={forkIcon} alt='forks' />
-                                        <span>{node.forkCount}</span>
-                                    </div>
-                                </Stats> */}
                                     </Card>
                                 </Item>
                             </div>
                         );
                     })}
                 </Grid>
-                {/* <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry’s standard dummy.
-                </p>
-                <Button as={AnchorLink} href='#contact'>
-                    Hire me
-                </Button> */}
             </Details>
         </SkillsWrapper>
     </Wrapper>
