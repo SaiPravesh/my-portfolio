@@ -4,6 +4,7 @@ import starIcon from 'assets/icons/star.svg';
 import forkIcon from 'assets/icons/fork.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import dev from 'assets/illustrations/skills.svg';
+
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from '../Skills/styles';
 
 export const Projects = () => {
@@ -11,13 +12,16 @@ export const Projects = () => {
         <Wrapper id='Projects'>
             <SkillsWrapper as={Container}>
                 <Details>
-                    <h1>Projects</h1>
-                    <p>
-                        I joined NTT Data in Jan 2015 as a support analyst and then started
-                        contributeing to java and middleware projects. <br />I recently moved to
-                        Ireland in Oct 2018 and started my role in the Digital team and have been
-                        contributing to several projects ever since.
-                    </p>
+                    <h1>Highlights</h1>
+                    <ul>
+                        <li>Self improvement</li>
+                        <li>Teamworkk - flexible and gel well with any team</li>
+                        <li>Foresight PWA and GraphQL and other SIP</li>
+                        <li>
+                            Client first - always work with intention to help client achive thier
+                            goal and provide practical advice and show high energy to clients
+                        </li>
+                    </ul>
                 </Details>
             </SkillsWrapper>
         </Wrapper>

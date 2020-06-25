@@ -8,7 +8,7 @@ export default () => (
         <Intro />
         <Journey />
         <Skills />
-        <Projects />
+        {/* <Projects /> */}
         <Values />
     </Layout>
 );

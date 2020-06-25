@@ -1,5 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import detailsRightIllustration from 'assets/illustrations/details2.svg';
 import { Container, Button, Card } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
@@ -8,6 +9,7 @@ import react from 'assets/logos/reactjs.svg';
 import angular from 'assets/logos/Angular.svg';
 import sass from 'assets/logos/sass.svg';
 import webpack from 'assets/logos/webpack.svg';
+import figma from 'assets/logos/figma.svg';
 import redux from 'assets/logos/redux.svg';
 import typescript from 'assets/logos/typescript.svg';
 import apolloGraphql from 'assets/logos/apollo-graphql.svg';
@@ -53,10 +55,10 @@ const skillList = [
             { name: 'react.js', logo: react },
             { name: 'Angular.js', logo: angular },
             { name: 'SASS', logo: sass },
-            { name: 'Webpack', logo: webpack },
             { name: 'Redux', logo: redux },
             { name: 'TypeScript', logo: typescript },
             { name: 'Apollo', logo: apolloGraphql },
+            { name: 'Figma', logo: figma },
             { name: 'Android', logo: android },
             { name: 'iOS', logo: appleios },
             { name: 'Ionic', logo: ionic },
@@ -81,44 +83,48 @@ const skillList = [
     },
     {
         id: 2,
-        type: 'Integration and CMS ',
+        type: 'Integration, Utilities and Others ',
         skills: [
             { name: 'GraphQL', logo: graphql },
-            { name: 'REST API', logo: rest },
+            { name: 'Jest', logo: jest },
             { name: 'Gatsby.js', logo: gatsby },
-            { name: 'JAMStack', logo: jamstack },
-            { name: 'Postman', logo: postman },
+            { name: 'Analytics', logo: googleAnalytics },
+            { name: 'Jenkins', logo: jenkins },
             { name: 'GIT', logo: git },
-            { name: 'JWT', logo: jwt },
+            { name: 'Netlify', logo: netlify },
             { name: 'OpenCMS', logo: opencms },
             { name: 'Wordpress', logo: wordpress },
             { name: 'Strapi', logo: strapi },
         ],
     },
-    {
-        id: 3,
-        type: 'Others ',
-        skills: [
-            { name: 'Jest', logo: jest },
-            { name: 'Selenium', logo: selenium },
-            { name: 'Puppeteer', logo: puppeteer },
-            { name: 'Jenkins', logo: jenkins },
-            { name: 'Chef', logo: chef },
-            { name: 'Github', logo: githubPipelines },
-            { name: 'Analytics', logo: googleAnalytics },
-            { name: 'Netlify', logo: netlify },
-            { name: 'PWA', logo: pwa },
-            { name: 'Bootstrap', logo: bootstrap },
-        ],
-    },
+    // {
+    //     id: 3,
+    //     type: 'Others ',
+    //     skills: [
+    //         { name: 'Jest', logo: jest },
+    //         { name: 'Selenium', logo: selenium },
+    //         { name: 'Puppeteer', logo: puppeteer },
+    //         { name: 'Jenkins', logo: jenkins },
+    //         { name: 'Chef', logo: chef },
+    //         { name: 'Github', logo: githubPipelines },
+    //         { name: 'Analytics', logo: googleAnalytics },
+    //         { name: 'Netlify', logo: netlify },
+    //         { name: 'PWA', logo: pwa },
+    //         { name: 'Bootstrap', logo: bootstrap },
+    //     ],
+    // },
 ];
 
 export const Skills = () => (
-    <Wrapper id='Skills'>
+    <Wrapper
+        id='Skills'
+        style={{
+            backgroundImage: `url(${detailsRightIllustration})`,
+            backgroundSize: 'contain',
+            backgroundPosition: 'right top',
+            backgroundRepeat: 'no-repeat',
+        }}>
         <SkillsWrapper as={Container}>
-            <Thumbnail>
-                <img src={dev} alt='I’m Sai Pravesh and I’m a fullstack engineer!' />
-            </Thumbnail>
             <Details>
                 <h1>Skills</h1>
                 <Grid>
@@ -131,30 +137,33 @@ export const Skills = () => (
                                         <Content>
                                             {skillset.skills.map(skill => {
                                                 return (
-                                                    <Item key={skill.name}>
-                                                        <Card
-                                                            style={{
-                                                                maxHeight: '8rem',
-                                                                marginTop: '5px',
-                                                                width: '4rem',
-                                                            }}>
-                                                            <img
-                                                                src={skill.logo}
-                                                                alt='react'
+                                                    <div style={{ display: 'flex' }}>
+                                                        <Item key={skill.name}>
+                                                            <Card
                                                                 style={{
-                                                                    height: '3rem',
-                                                                    width: '3rem',
-                                                                }}
-                                                            />
-                                                            <p
-                                                                style={{
-                                                                    fontSize: '10pt',
-                                                                    marginBottom: '0',
+                                                                    maxHeight: '8rem',
+                                                                    marginTop: '5px',
+                                                                    width: '4rem',
                                                                 }}>
-                                                                {skill.name}
-                                                            </p>
-                                                        </Card>
-                                                    </Item>
+                                                                <img
+                                                                    src={skill.logo}
+                                                                    alt='react'
+                                                                    style={{
+                                                                        height: '2rem',
+                                                                        width: '3rem',
+                                                                    }}
+                                                                />
+                                                                <p
+                                                                    style={{
+                                                                        fontSize: '10pt',
+                                                                        marginBottom: '0',
+                                                                    }}>
+                                                                    {skill.name}
+                                                                </p>
+                                                            </Card>
+                                                        </Item>
+                                                        <div style={{ padding: '0.2rem' }}></div>
+                                                    </div>
                                                 );
                                             })}
                                         </Content>
@@ -165,6 +174,13 @@ export const Skills = () => (
                     })}
                 </Grid>
             </Details>
+            <Thumbnail>
+                <img
+                    src={dev}
+                    alt='I’m Sai Pravesh and I’m a fullstack engineer!'
+                    style={{ marginLeft: '4rem' }}
+                />
+            </Thumbnail>
         </SkillsWrapper>
     </Wrapper>
 );
