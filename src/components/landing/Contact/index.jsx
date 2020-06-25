@@ -16,10 +16,12 @@ export const Values = () => (
                 <ul>
                     <li>Very flexible and gel well with any team </li>
                     <li>
-                        Worked closely with other vendors and in with business team and was able to
-                        maintain good relationship with everyone
+                        Working closely with other vendors and business team, was able to maintain
+                        good relationship with everyone
                     </li>
-                    <li>Provided professional and moral support to internal team when possible</li>
+                    <li>
+                        Provided professional and moral support to internal team whenever possible
+                    </li>
                 </ul>
 
                 <span style={{ fontSize: '15pt' }}>Foresight</span>
@@ -30,7 +32,7 @@ export const Values = () => (
                         in a microservice environment
                     </li>
                     <li>
-                        Serveral other service improvements have been suggested and implemented taht
+                        Several other service improvements were suggested and implemented that
                         helped move away from legacy implementations to better bespoke greenfield
                         solutions
                     </li>
@@ -38,13 +40,16 @@ export const Values = () => (
                 <span style={{ fontSize: '15pt' }}>Client first</span>
                 <ul>
                     <li>
-                        Always work with intention to help client achive thier goal and provide
-                        practical advice and show high energy to clients
+                        Always work with the intention to help client achieve their goal by
+                        providing practical advice and show high energy to clients
                     </li>
                 </ul>
                 <span style={{ fontSize: '15pt' }}>Self improvement</span>
                 <ul>
-                    <li>Always am motivated, explore new ideas and implement best practices</li>
+                    <li>
+                        Being a self-motivated person, I explore new ideas and implement best
+                        practices
+                    </li>
                 </ul>
             </ul>
         </Details>

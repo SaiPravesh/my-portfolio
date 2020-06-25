@@ -12,7 +12,7 @@ export const Intro = () => (
             <Details>
                 <h1>Hi There!</h1>
                 <h4>
-                    I’m Sai Pravesh and I’m a fullstack developer! <br />
+                    I’m Sai Pravesh, a fullstack developer! <br />
                     Here is my Digital portfolio
                 </h4>
             </Details>

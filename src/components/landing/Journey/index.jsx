@@ -16,10 +16,10 @@ export const Journey = () => {
                 <Details>
                     <h1>Journey in NTT Data</h1>
                     <p style={{ fontSize: '15pt' }}>
-                        Joined NTT Data in Jan 2015 as a support analyst and then started
-                        contributeing to java and middleware projects. <br />I recently moved to
-                        Ireland in Oct 2018 and started my role in the Digital team and have been
-                        contributing to several projects ever since.
+                        Joined as a support analyst with NTT Data from Jan 2015 and progressed to
+                        java and middleware projects. <br />
+                        Moved to Ireland in Oct 2018 and started a key role as part of the Digital
+                        team, have been contributing to several projects ever since.
                     </p>
                     <h2>Key projects</h2>
                     <ul>
