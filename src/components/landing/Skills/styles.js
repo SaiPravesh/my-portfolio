@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
     background-size: contain;
     background-position: left top;
     background-repeat: no-repeat;
+
+    @media (max-width: 960px) {
+        background-image: none;
+    }
 `;
 
 export const SkillsWrapper = styled.div`
@@ -45,10 +49,12 @@ export const Details = styled.div`
 
 export const Thumbnail = styled.div`
     flex: 1;
+    padding-bottom: 10rem;
 
     @media (max-width: 960px) {
         width: 100%;
         margin-bottom: 2rem;
+        padding-bottom: 0;
     }
 
     img {

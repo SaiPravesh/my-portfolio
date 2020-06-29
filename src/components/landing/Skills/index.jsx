@@ -4,7 +4,7 @@ import detailsRightIllustration from 'assets/illustrations/details2.svg';
 import { Container, Button, Card } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
-import { Grid, Item, Content, Stats } from '../Projects/styles';
+import { Grid, Item, Content, Stats, SkillGrid } from '../Projects/styles';
 import react from 'assets/logos/reactjs.svg';
 import angular from 'assets/logos/Angular.svg';
 import sass from 'assets/logos/sass.svg';
@@ -52,7 +52,7 @@ const skillList = [
         id: 0,
         type: 'Frontend',
         skills: [
-            { name: 'react.js', logo: react },
+            { name: 'React.js', logo: react },
             { name: 'Angular.js', logo: angular },
             { name: 'SASS', logo: sass },
             { name: 'Redux', logo: redux },
@@ -137,6 +137,7 @@ export const Skills = () => (
                                         <Content>
                                             {skillset.skills.map(skill => {
                                                 return (
+                                                    // <SkillGrid>
                                                     <div style={{ display: 'flex' }}>
                                                         <Item key={skill.name}>
                                                             <Card
@@ -164,6 +165,7 @@ export const Skills = () => (
                                                         </Item>
                                                         <div style={{ padding: '0.2rem' }}></div>
                                                     </div>
+                                                    // </SkillGrid>
                                                 );
                                             })}
                                         </Content>
