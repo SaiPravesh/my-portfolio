@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import { Container, Button } from 'components/common';
 import starIcon from 'assets/icons/star.svg';
@@ -32,7 +33,7 @@ export const Journey = () => {
                             <span style={{ fontSize: '15pt' }}>As a support analyst</span>
                             <ul>
                                 <li>
-                                    I became the SME for mobile number porting application and was
+                                    SME for mobile number porting application and was
                                     the point of contact for any major incidents.
                                 </li>
                             </ul>
@@ -41,7 +42,7 @@ export const Journey = () => {
                             <span style={{ fontSize: '15pt' }}>As a Java engineer</span>
                             <ul>
                                 <li>
-                                    I was the main contributor for rebuilding a legacy point of sale
+                                    The main contributor for rebuilding a legacy point of sale
                                     application from scratch, which adviced customers to opt into or
                                     purchase roaming bundles and data add-ons including introduction
                                     of social bundles where data is charged based on pre-set rules
@@ -72,7 +73,7 @@ export const Journey = () => {
                             <span style={{ fontSize: '15pt' }}>As an Onsite-coordinator</span>
                             <ul>
                                 <li>
-                                    I was able to communicate effectively, both within and outside
+                                    Able to communicate effectively, both within and outside
                                     the team and supported delivery of several projects and
                                     maintained 100% SLA.
                                 </li>
