@@ -7,8 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import dev from 'assets/illustrations/progress.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from '../Skills/styles';
 
-export const Journey = () => {
-    return (
+export const Journey = () => (
         <Wrapper id='Journey'>
             <SkillsWrapper as={Container}>
                 <Thumbnail>
@@ -20,7 +19,7 @@ export const Journey = () => {
                     />
                 </Thumbnail>
                 <Details>
-                    <h1>Journey in NTT Data</h1>
+                    <h1>Journey in NTT Data!</h1>
                     <p style={{ fontSize: '12pt' }}>
                         Joined as a support analyst with NTT Data from Jan 2015 and progressed to
                         java and middleware projects. <br />
@@ -143,4 +142,3 @@ export const Journey = () => {
             </SkillsWrapper>
         </Wrapper>
     );
-};

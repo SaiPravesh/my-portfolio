@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        .skill {
+            display: grid;
+            grid-template-rows: 1fr;
+            gap: 2rem;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            grid-auto-rows: 8rem;
+            justify-items: center;
+        }
+        .wrapper > div img {
+            max-width: 100%;
+            max-height: 60%;
+        }
+        .wrapper > div {
+            background: #eee;
+            padding: 1rem;
+        }
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+        .skill .wrapper > div {
+            background: #eee;
+            padding: 1rem;
+        }
+        .skill .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+    <body>
+        <div class="skill">
+            <div class="wrapper">
+                <div>
+                    <img src="../../../assets/logos/android.svg" alt="" srcset="" />
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="wrapper">
+                <div>
+                    <img src="../../../assets/logos/android.svg" alt="" srcset="" />
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+            </div>
+        </div>
+    </body>
+</html>
